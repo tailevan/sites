@@ -10,6 +10,32 @@
     <header>
         <h1>Welcome to GHG projects</h1>
     </header>
+    <style>
+        .sparkling-thing {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            animation: sparkle 2s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(200px, 200px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+
+    <body>
+        <div class="sparkling-thing"></div>
+    </body>
 
     <main>
         <section>
