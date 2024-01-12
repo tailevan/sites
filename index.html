@@ -3,81 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Introduction</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to GHG projects</h1>
-    </header>
-    <style>
-        .sparkling-thing {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: yellow;
-            border-radius: 50%;
-            animation: sparkle 2s linear infinite;
-        }
+    <div class="container mt-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#about" data-toggle="tab">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#info" data-toggle="tab">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects" data-toggle="tab">Projects</a>
+            </li>
+        </ul>
 
-        @keyframes sparkle {
-            0% {
-                transform: translate(0, 0);
-            }
-            50% {
-                transform: translate(200px, 200px);
-            }
-            100% {
-                transform: translate(0, 0);
-            }
-        }
-    </style>
+        <div class="tab-content mt-3">
+            <div class="tab-pane active" id="about">
+                <h2>About Me</h2>
+                <p>Your about information goes here.</p>
+            </div>
+            <div class="tab-pane" id="info">
+                <h2>Info</h2>
+                <p>Your info goes here.</p>
+            </div>
+            <div class="tab-pane" id="projects">
+                <h2>Projects</h2>
+                <p>Your projects go here.</p>
+            </div>
+        </div>
+    </div>
 
-    <body>
-        <div class="sparkling-thing"></div>
-    </body>
-
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
-            <a href="web_page/about.html">Learn more about me</a> <!-- Added link to about.html -->
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </section>
-
-
-        <p>This is an inline formula: \( a^2 + b^2 = c^2 \)</p>
-        <p>This is a display formula:</p>
-        \[ E = mc^2 \]
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <p>Email: your-email@example.com</p>
-            <p>Phone: 123-456-7890</p>
-        </section>
-    </main>
-
-    
-    <footer>
-        <p>&copy; 2022 My Awesome Web Page. All rights reserved.</p>
-    </footer>
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
